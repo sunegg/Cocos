@@ -18,7 +18,7 @@ export default class Sensor extends cc.Component {
     }
     onCollisionEnter (other:cc.Collider, self:cc.Collider) {
         console.log('on collision enter');
-        GameManager.instance.node.emit("addScore", 1);
+        GameManager.instance.node.emit("addScore");
         this.node.destroy();
     }
     // update (dt) {}
